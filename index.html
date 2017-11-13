@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title> UniChat Beta </title>
-          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-          <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-      <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
-      <script>
-      // Initialize Firebase
-      var config = {
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
         apiKey: "AIzaSyC9eUkCvbKv7nzQocRelivvyvWAlmiORsg",
         authDomain: "unichat-10bbd.firebaseapp.com",
         databaseURL: "https://unichat-10bbd.firebaseio.com",
         projectId: "unichat-10bbd",
         storageBucket: "unichat-10bbd.appspot.com",
         messagingSenderId: "847148140589"
-      };
-      firebase.initializeApp(config);
+    };
+    firebase.initializeApp(config);
     </script>
     <style>
-      * {
+    * {
         font-family: Helvetica, sans-serif;
-      }
+    }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
-    <h1>Enter your thoughts at the bottom!</h1>
+        <h1>Enter your thoughts at the bottom!</h2>
+        <br />
+        <div id="output"></div>
+        <input type="text" class="browser-default" style="width: 500px; padding-bottom: 6px; padding-top: 6px; margin-bottom: 1px;" id="message">
+        <input type="button" value="Submit" class="btn purple waves-effect" onclick="submitMessage()">
+        <p>Rules:</p>
+        <ol>
+            <li> No Profanity </li>
+            <li> Although there are no length restrictions, please refrain from spammy messages. </li>
+            <li> No Emoji's. </li>
+            <li> No impersonation, without explicit permission from _iPhoenix_, the site owner. </li>
+        </ol>
+        <h4>Breaking the rules may result in consequences</h3>
     <br />
-    <div id="output"></div>
-    <input type="text" id="message">
-    <input type="button" value="Submit" class="btn purple waves-effect" onclick="submitMessage()">
-    <p>Rules:</p>
-    <ol>
-      <li> No Profanity </li>
-      <li> Although there are no length restrictions, please refrain from spammy messages. </li>
-      <li> No Emoji's. </li>
-      <li> No impersonation, without explicit permission from _iPhoenix_, the site owner. </li>
-    </ol>
-    <h3>Breaking the rules may result in consequences</h3>
-    </div>
-    <br />
-    
     <p>My goal:</p>
     <ol>
-      <li> Provide a free, friendly, and open experience for users to chat, connect, hang out, and work. </li>
-      <li> Create a bounty of anonymized, secure data that my machine-learning algorithms can learn human behavior from. </li>
+        <li> Provide a free, friendly, and open experience for users to chat, connect, hang out, and work. </li>
+        <li> Create a bounty of anonymized, secure data that my machine-learning algorithms can learn human behavior from. </li>
     </ol>
+        </div>
     <script src="js/main.js"></script>
-  </body>
+</body>
+
 </html>
